@@ -19,12 +19,13 @@ function mouseDownFn(e) {
     d.style.left = e.clientX + 'px';
     d.style.top = e.clientY + 'px';
 
-    //Creating popup
-    var popup = document.getElementById("statePopup");
+
 
     //Checking the states
     if ((mouseX > 170 && mouseX < 220) && (mouseY > 440 && mouseY < 500)) {
         console.log("TamilNadu")
+        //Creating popup
+        var popup = document.getElementById("statePopup");
         popup.innerHTML = "TamilNadu"
         popup.classList.toggle("show");
         document.getElementById("description").innerHTML = "Tamil Nadu, or land of the Tamils, is the fourth largest state of India and is located in the extreme south of the Indian subcontinent. It is bounded by the Indian Ocean to the east and south, and by the states of Kerala to the west, Karnataka to the northwest, and Andhra Pradesh to the north."
